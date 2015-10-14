@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>123这辈子注定是要靠逗比吃饭！</title>
+  <title id="title"></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link href="http://cdn.bbyxy.com/quiz/1/css/style_grow.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
@@ -64,11 +64,14 @@
       var age = getQueryString("age");
       $("#age").text(age);
 
-      var cnt = parseInt($.md5(age)[0]) % 15 + 1; //
+      var cnt = parseInt("0x" + $.md5(age).substring(0, 2)) % 15 + 1;
       $("#skill").text(skills[cnt]);
 
       var url = "http://cdn.bbyxy.com/quiz/1/img/chifan/" + cnt + ".gif";
       $("#img").prop("src", url);
+
+      var title = "生在" + age + "，这辈子注定是要靠" + skills[cnt] + "吃饭！";
+      $("#title").text(title);
     });
 
 
