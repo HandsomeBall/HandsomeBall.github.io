@@ -10,6 +10,7 @@
   <link href="http://cdn.bbyxy.com/quiz/1/css/style_grow.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://dup.baidustatic.com/js/zm.js"></script>
+  <script type="text/javascript" src="http://www.veryhuo.com/uploads/Common/js/jQuery.md5.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     <input style="width: 45%;float: left;margin-left: 3%;" type="button" class="btn-share" value="分享出去" onclick="document.getElementById('share').style.display='inline'">
 
 
-    <input style="width: 45%;margin-left: 3%;" type="button" class="btn-start-r" value="更多好玩" onclick="window.location.href='http://119.29.139.109/gzh/gzgzh.php'">
+    <input style="width: 45%;margin-left: 3%;" type="button" class="btn-start-r" value="更多好玩" onclick="return false;">
 
   </div>
 
@@ -50,13 +51,20 @@
       });
 
       var skills = {
-        1: "行动",
+        1: "行动",    8: "智商",
+        2: "读书",    9: "数钱",
+        3: "身材",    10: "撒钱",
+        4: "会持家",  11: "双手",
+        5: "练武",    12: "口才",
+        6: "聪明的大脑",    13: "逗比",
+        7: "才华",    14: "脸皮厚",
+        15: "手机"
       }
 
       var age = getQueryString("age");
       $("#age").text(age);
 
-      var cnt = 1; //
+      var cnt = parseInt($.md5(age)[0]) % 15 + 1; //
       $("#skill").text(skills[cnt]);
 
       var url = "http://cdn.bbyxy.com/quiz/1/img/chifan/" + cnt + ".gif";
