@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>123这辈子注定是要靠逗比吃饭！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="http://cdn.bbyxy.com/quiz/1/css/style_grow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://dup.baidustatic.com/js/zm.js"></script>
+</head>
+
+<body>
+
+  <div style="text-align:center;">
+  </div>
+
+  <img src="http://cdn.bbyxy.com/quiz/1/img/chifan/ico.jpg" style="position: absolute;top: -10000px;left: -1000px;z-index: -1;" />
+
+  <div class="share" id="share" onclick="document.getElementById('share').style.display='block'">
+    <img width="85%" src="http://cdn.bbyxy.com/quiz/1/img/common/share.png">
+  </div>
+  <div class="page2">
+    <section class="section">
+      <div class="word-wrap">
+        出生于
+        <font color="#EE7600" id="age">123</font> 的人，这辈子靠
+        <font color="#EE7600" id="skill">逗比</font>吃饭</div>
+    </section>
+    <img src="" class="funny-img" id="img">
+    <br>
+
+
+
+
+
+    <input style="width: 45%;float: left;margin-left: 3%;" type="button" class="btn-share" value="分享出去" onclick="document.getElementById('share').style.display='inline'">
+
+
+    <input style="width: 45%;margin-left: 3%;" type="button" class="btn-start-r" value="更多好玩" onclick="window.location.href='http://119.29.139.109/gzh/gzgzh.php'">
+
+  </div>
+
+  <script>
+    $(function() {
+      $('#share').click(function() {
+        $('#share').hide();
+      });
+
+      var skills = {
+        1: "行动",
+      }
+
+      var age = getQueryString("age");
+      $("#age").text(age);
+
+      var cnt = 1; //
+      $("#skill").text(skills[cnt]);
+
+      var url = "http://cdn.bbyxy.com/quiz/1/img/chifan/" + cnt + ".gif";
+      $("#img").prop("src", url);
+    });
+
+
+
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+    }
+
+
+  </script>
+
+</body>
+
+</html>

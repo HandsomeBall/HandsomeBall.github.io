@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>你是靠什么吃饭的~</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="http://cdn.bbyxy.com/quiz/1/css/style_grow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://dup.baidustatic.com/js/zm.js"></script>
+</head>
+
+<body>
+
+  <div style="text-align:center;">
+  </div>
+
+  <div class="page1">
+    <div class="title">
+      <img src="http://cdn.bbyxy.com/quiz/1/img/chifan/title.png" alt="">
+      <p>快来找半仙算算你这辈子是靠什么吃饭的~</p>
+    </div>
+    <img src="http://cdn.bbyxy.com/quiz/1/img/chifan/cover.jpg" class="funny-img">
+    <center>
+      <form method="get" action="lucky_age_result.html" onsubmit="return checkSub();">
+        <input type="text" class="input-name" name="age" id="grow_name" placeholder="请输入你的年龄 19930401">
+        <br>
+        <input type="submit" class="btn-start" value="开始测试">
+      </form>
+    </center>
+  </div>
+  <script type="text/javascript">
+    function checkSub() {
+      return CheckDate($('#grow_name').val());
+    }
+
+		function CheckDate(strDate){
+    //var strDate = document.getElementById("date_hour").value;
+     var reg=/^(\d{4})(\d{2})(\d{2})$/;
+     if(!reg.test(strDate)){
+         return false;
+      }
+      //var ss=strDate.split("/");
+      //var year=ss[0];
+      //var month=ss[1];
+      //var date=ss[2];
+      var year=strDate.substring(0,4);
+      var month=strDate.substring(4,6);
+      var date=strDate.substring(6,8);
+      //alert(year+month+date);
+      if(!checkYear(year)){return false;}
+      if(!checkMonth(month)){return false;}
+      if(!checkDate(year,month,date)){return false;}
+      return true;
+  }
+ function checkYear(year){
+     if(isNaN(parseInt(year))){
+          return false;
+     }
+     else if(parseInt(year)<1950 || parseInt(year) >2050)
+     {
+         return false;
+     }
+     else return true;
+  }
+ function checkMonth(month){
+  if(isNaN(parseInt(month,10))){return false;}
+      else if(parseInt(month,10)<1 || parseInt(month,10) >12)
+      {return false;}
+      else return true;
+  }
+ function checkDate(year,month,date){
+  var daysOfMonth=CalDays(parseInt(year),parseInt(month));
+  if(isNaN(parseInt(date))){ return false;}
+      else if(parseInt(date)<1||parseInt(date)>daysOfMonth){ return false;}
+      else return true;
+  }
+ function CalDays(year,month){
+  var date= new Date(year,month,0);
+  return date.getDate();
+  }
+ function isLeapYear(year){
+  if((year %4==0 && year %100!=0) || (year %400==0)) return true;
+  else return false;
+  }
+  </script>
+
+</body>
+
+</html>
