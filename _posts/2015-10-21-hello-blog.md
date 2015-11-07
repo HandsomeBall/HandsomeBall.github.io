@@ -2,7 +2,7 @@
 layout: post
 title:  "博客已开通"
 date:   2015-10-21 13:39:00
-tags: blog
+category: blog
 ---
 
 # 博客已开通
