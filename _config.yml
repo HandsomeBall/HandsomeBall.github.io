@@ -1,8 +1,8 @@
 # Site settings
-title: 享受做事的乐趣
+title: 乐在其中
 header-img: "img/facebook.jpg"
 tagline: "cn"
-description: "zxp|享受做事的乐趣"
+description: "zxp|乐在其中"
 baseurl: ""
 url: "http://handsomeball.com"
 
@@ -10,7 +10,7 @@ url: "http://handsomeball.com"
 owner:
   name: " Zxp"
   email: 3152149160@qq.com
-  bio: "追求兴趣"
+  bio: "追求兴趣，乐在其中"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
