@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Android 应用的开发知识点笔记 (1)"
-date:   2015-11-07 23:36:00
+date:   2015-11-19 23:36:00
 tags: android guess-number
 category: blog
 ---
