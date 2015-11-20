@@ -13,7 +13,7 @@ category: blog
 ### 在 Android 中使用 Lambda
 
 对 Java 开发一直不能忍的就是它冗长的语法，Java 8 缓解了这一现状，不过 Android 还未跟进  
-国外大牛已经给出了[一个 Gradele 插件](https://github.com/evant/gradle-retrolambda)来解决问题  
+国外大牛已经给出了[一个 Gradle 插件](https://github.com/evant/gradle-retrolambda)来解决问题  
 
 对于 Android Studio，还需要消灭对 Java 8 的语法警告  
 
