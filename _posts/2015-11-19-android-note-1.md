@@ -2,11 +2,11 @@
 layout: post
 title:  "Android 应用的开发知识点笔记 (1)"
 date:   2015-11-19 23:36:00
-tags: android guess-number
+tags: android note
 category: blog
 ---
 
-#猜数字 Android 应用的开发
+#Android 应用的开发知识点笔记 (1)
 
 还是不想上班，想自己捣鼓一点东西，再做一下努力吧！  
 
