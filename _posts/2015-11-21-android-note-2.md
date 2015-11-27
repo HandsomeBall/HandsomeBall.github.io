@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Android 应用的开发知识点笔记 (2)"
+title:  "Android 应用开发笔记 (2)"
 date:   2015-11-21 00:37:00
 tags: android note
 category: blog
 ---
 
-#Android 应用的开发知识点笔记 (2)
+#Android 应用开发笔记 (2)
 
 继续做我的小应用
 
