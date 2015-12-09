@@ -29,6 +29,7 @@ Android 版本号应该在 AndroidManifest.xml 文件的根节点中声明，见
         defaultConfig {
             versionCode 2
             versionName "1.1"
+        }
     }
 
 ### Google Play 发布应用后搜索不到
