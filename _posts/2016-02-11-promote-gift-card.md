@@ -2,7 +2,7 @@
 layout: post
 title:  "推广 Gift Card 的十种方法"
 date:   2016-2-11 12:34:31
-tags: Affiliate 翻译
+tags: Affiliate "翻译"
 category: blog
 ---
 
