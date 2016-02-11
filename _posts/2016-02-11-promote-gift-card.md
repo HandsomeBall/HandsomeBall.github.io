@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "推广 Gift Card 的十种方法"
-date:   2016-2-11 12:34:31
+date:   2016-02-11 12:34:31
 tags: affiliate translate
 category: blog
 ---
 
-推广 Gift Card 的十种方法
-========================
+# 推广 Gift Card 的十种方法
 
 > [http://solomozone.com/2015/10/27/gift-cards/](http://solomozone.com/2015/10/27/gift-cards/)  
 
