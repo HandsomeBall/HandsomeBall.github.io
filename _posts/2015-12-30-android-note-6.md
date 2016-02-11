@@ -12,7 +12,7 @@ category: blog
 What is the difference between:
 
 - px  
-- dip 
+- dip
 - dp  
 - sp  
 
@@ -40,7 +40,7 @@ You would use
 - sp for font sizes  
 - dip for everything else, where dip == dp  
 From Android Developers centre:  
-  
+
 +---------+-------------+---------------+-------------+--------------------+  
 | Density | Description | Units Per     | Density     | Same Physical Size |   
 |         |             | Physical Inch | Independent | On Every Screen    |   

@@ -1,5 +1,6 @@
 # Gems
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
 
 # Site settings
 title: 乐在其中
@@ -56,7 +57,7 @@ comments :
   duoshuo :
     short_name : zxp
   disqus :
-      short_name : zxp
+    short_name : zxp
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:

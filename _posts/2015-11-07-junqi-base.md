@@ -3,7 +3,7 @@ layout: post
 title:  "四国军棋基本知识记录"
 date:   2015-11-07 19:29:00
 tags: 四国军棋
-category: sgjq
+category: blog
 ---
 
 # 军棋基本知识和术语

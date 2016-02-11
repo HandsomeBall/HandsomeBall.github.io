@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Archive"
-description: "自己的笔记本"
+description: "我的笔记本"
 header-img: "img/orange.jpg"
 ---
 
